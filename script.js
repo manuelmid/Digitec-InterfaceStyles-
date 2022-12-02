@@ -7,6 +7,7 @@
     var mainContent = document.getElementById("main_content");
     var mainBox = document.getElementById("scrollable");
     var sideBar = document.getElementById("side");
+    var inputs = document.querySelectorAll("input");
 
     //BODY STYLES
         box.style.backgroundColor = "rgb(0 84 166 / 30%)";
@@ -22,8 +23,8 @@
             mainContent.childNodes[1].width = "860px";
         //SIZES
 
-        //document.body.style.backgroundImage = "url(https://bestof.nyc3.digitaloceanspaces.com/devsnap.me/sam/svg-and-css-squiggly-pattern.gif)";
-        document.body.style.background = "radial-gradient(circle, rgba(7,144,172,1) 0%, rgba(9,9,121,1) 62%, rgba(2,0,36,1) 100%)";
+        document.body.style.backgroundImage = "url(https://bestof.nyc3.digitaloceanspaces.com/devsnap.me/sam/svg-and-css-squiggly-pattern.gif)";
+        //document.body.style.background = "radial-gradient(circle, rgba(7,144,172,1) 0%, rgba(9,9,121,1) 62%, rgba(2,0,36,1) 100%)";
     //BODY STYLES
 
     //BUTTONS
@@ -34,6 +35,7 @@
             botones[i].style.backgroundImage = "url()";
             botones[i].style.fontSize = "20px";
             botones[i].style.textAlign = "center";
+            inputs[i].style.width = "300px"
 
         };
     //BUTTONS
