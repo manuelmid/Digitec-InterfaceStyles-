@@ -1,0 +1,33 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <button>1</button>
+    <button>2</button>
+    <button>3</button>
+    <button>4</button>
+    
+
+    <script>
+
+        var botones = document.querySelectorAll("button");
+
+        enlarge();
+
+        function enlarge(){
+            for( let i = 0 ; i < botones.length; i++ ){
+                console.log(botones[i]);
+                botones[i].style = " width: 100px; height: 100px; text-align: center; background-image: url(); font-size: 20px; ";
+            }
+            //setTimeout(enlarge, 1000);
+        }
+
+    </script>
+
+</body>
+</html>

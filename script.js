@@ -1,7 +1,6 @@
 (function() {
 
     var box = document.getElementById("controller");
-    var botones = document.querySelectorAll("button");
     var main = document.getElementById("main");
     var menuBox = document.getElementById('fixed');
     var mainContent = document.getElementById("main_content");
@@ -23,21 +22,22 @@
             mainContent.childNodes[1].width = "860px";
         //SIZES
 
-        document.body.style.backgroundImage = "url(https://bestof.nyc3.digitaloceanspaces.com/devsnap.me/sam/svg-and-css-squiggly-pattern.gif)";
-        //document.body.style.background = "radial-gradient(circle, rgba(7,144,172,1) 0%, rgba(9,9,121,1) 62%, rgba(2,0,36,1) 100%)";
+        //document.body.style.backgroundImage = "url(https://bestof.nyc3.digitaloceanspaces.com/devsnap.me/sam/svg-and-css-squiggly-pattern.gif)";
+        document.body.style.background = "radial-gradient(circle, rgba(7,144,172,1) 0%, rgba(9,9,121,1) 62%, rgba(2,0,36,1) 100%)";
     //BODY STYLES
 
     //BUTTONS
-        for( let i = 0 ; i < botones.length ; i++ ){
 
-            botones[i].style.width = "100px";
-            botones[i].style.height = "100px";
-            botones[i].style.backgroundImage = "url()";
-            botones[i].style.fontSize = "20px";
-            botones[i].style.textAlign = "center";
-            inputs[i].style.width = "300px"
+    enlarge();
 
-        };
+    function enlarge(){
+        var botones = document.querySelectorAll("button");
+        
+        for( let i = 0 ; i < botones.length; i++ ){
+            botones[i].style = " width: 100px; height: 100px; text-align: center; background-image: url(); font-size: 20px; ";
+        }
+        //setTimeout(enlarge, 1000);
+    }
     //BUTTONS
 
 })();
